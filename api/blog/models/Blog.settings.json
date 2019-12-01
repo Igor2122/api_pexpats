@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "blogs",
+  "info": {
+    "name": "blog",
+    "description": "all blog posts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "body": {
+      "type": "text"
+    },
+    "published": {
+      "type": "boolean"
+    },
+    "category": {
+      "type": "integer"
+    }
+  }
+}
