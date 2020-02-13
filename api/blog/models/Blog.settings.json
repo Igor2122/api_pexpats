@@ -25,9 +25,6 @@
       "via": "related",
       "plugin": "upload"
     },
-    "body": {
-      "type": "text"
-    },
     "published": {
       "type": "boolean"
     },
@@ -36,6 +33,9 @@
     },
     "slug": {
       "type": "string"
+    },
+    "body": {
+      "type": "richtext"
     }
   }
 }
