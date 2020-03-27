@@ -17,18 +17,35 @@
     "title": {
       "type": "string"
     },
-    "icon": {
-      "type": "string"
-    },
-    "details": {
-      "type": "richtext"
-    },
     "productcategory": {
       "model": "productcategory",
       "via": "products"
     },
     "slug": {
       "type": "string"
+    },
+    "bottomLine": {
+      "type": "text"
+    },
+    "usp": {
+      "type": "text"
+    },
+    "whatugetlist": {
+      "type": "text"
+    },
+    "neettoprovide": {
+      "type": "text"
+    },
+    "nextsteps": {
+      "type": "text"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "collapseSections": {
+      "type": "text"
     }
   }
 }
