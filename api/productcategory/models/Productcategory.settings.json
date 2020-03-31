@@ -22,7 +22,7 @@
     },
     "products": {
       "collection": "product",
-      "via": "productcategory"
+      "via": "productcategories"
     }
   }
 }

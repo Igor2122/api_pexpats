@@ -15,29 +15,17 @@
   },
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "productcategory": {
-      "model": "productcategory",
-      "via": "products"
+    "productcategories": {
+      "collection": "productcategory",
+      "via": "products",
+      "dominant": true
     },
     "slug": {
-      "type": "string"
-    },
-    "bottomLine": {
-      "type": "text"
-    },
-    "usp": {
-      "type": "text"
-    },
-    "whatugetlist": {
-      "type": "text"
-    },
-    "neettoprovide": {
-      "type": "text"
-    },
-    "nextsteps": {
-      "type": "text"
+      "type": "string",
+      "required": true
     },
     "icon": {
       "model": "file",
@@ -45,7 +33,29 @@
       "plugin": "upload"
     },
     "collapseSections": {
-      "type": "text"
+      "type": "text",
+      "required": true
+    },
+    "bottomLine": {
+      "default": "",
+      "required": true,
+      "type": "richtext"
+    },
+    "usp": {
+      "required": true,
+      "type": "richtext"
+    },
+    "whatugetlist": {
+      "type": "richtext",
+      "required": true
+    },
+    "neettoprovide": {
+      "required": true,
+      "type": "richtext"
+    },
+    "nextsteps": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
